@@ -1,0 +1,13 @@
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+    uuid(8791C379-D199-4f90-862E-8379EEC21E47),
+    version(1.0),
+	pointer_default(unique),
+	//endpoint("ncalrpc:[{C25682E7-183B-47e0-B2A8-3EEF003DD7DC}]") 
+]
+interface hello
+{
+    unsigned long HelloProc([in, string] wchar_t * pszRequest, [out, string] wchar_t ** ppszResponce);
+}
